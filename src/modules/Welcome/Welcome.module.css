@@ -1,0 +1,18 @@
+.welcome_container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 2em;
+    border-radius: 1em;
+}
+
+.welcome_header {
+    font-size: 4em;
+    animation: gradient 15s ease infinite;
+    transition: background-position 1s ease-in-out;
+    background: linear-gradient(90deg, #fdbb2d 0%, #22c1c3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

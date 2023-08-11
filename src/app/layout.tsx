@@ -1,14 +1,15 @@
+/* eslint-disable camelcase -- disabled */
 /* eslint-disable @next/next/no-page-custom-font -- disabled */
 /* eslint-disable new-cap -- disabled */
 import "./globals.css";
 
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 import React from "react";
 
 import styles from "./layout.module.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const jetbrains = JetBrains_Mono({ subsets: ["latin"] });
 
 type RootLayoutProperties = React.PropsWithChildren;
 
@@ -41,7 +42,7 @@ const RootLayout = ({ children }: RootLayoutProperties): JSX.Element => (
                 rel="stylesheet"
             />
         </head>
-        <body className={`${inter.className} ${styles.layout_body}`}>
+        <body className={`${jetbrains.className} ${styles.layout_body}`}>
             {children}
         </body>
     </html>

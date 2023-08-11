@@ -1,0 +1,54 @@
+@keyframes appear_anim {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes interactivity_anim {
+    from {
+        pointer-events: none;
+    }
+    to {
+        pointer-events: all;
+    }
+}
+
+.welcome_button_bar {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.welcome_button_bar > a {
+    pointer-events: none;
+    opacity: 0%;
+    width: 100%;
+    text-align: center;
+    animation:
+        appear_anim 1.5s ease-in forwards,
+        interactivity_anim 1.5s ease-in forwards;
+}
+
+.login_button {
+    background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
+}
+
+.signup_button {
+    background: linear-gradient(90deg, #3f2b96 0%, #a8c0ff 100%);
+}
+
+.welcome_button_bar_button {
+    padding: 1em;
+    border-radius: 1em;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+    background-size: 200% auto !important;
+}
+
+.welcome_button_bar_button:hover {
+    background-position: right center !important;
+}

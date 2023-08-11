@@ -6,7 +6,7 @@ import {
 } from "@/common/helper/color";
 
 /**
- *
+ *   Creates a linear-gradient background animation, where the gradient changes color and rotates in the background
  */
 export const useBackgroundLinearGradientAnimation = (): void => {
     React.useEffect(() => {
