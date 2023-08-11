@@ -8,7 +8,7 @@
         "start": "next start",
         "lint": "next lint",
         "install-linter": "npm i --save-dev eslint-plugin-jest eslint-config-problems eslint-config-intense eslint-config-prettier eslint-plugin-eslint-comments eslint-plugin-import eslint-plugin-no-secrets eslint-plugin-node eslint-plugin-prettier eslint-plugin-ramda eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-simple-import-sort eslint-plugin-sonarjs eslint-plugin-unicorn prettier prettier-eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-next",
-        "push": "git commit -a -m push && git push origin && git push origin copy"
+        "push": "git commit -a -m push && git push origin && git push origin-copy"
     },
     "dependencies": {
         "next": "13.4.13",
