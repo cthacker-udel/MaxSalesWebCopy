@@ -1,0 +1,1 @@
+export { useBackgroundLinearGradientAnimation } from "./useBackgroundLinearGradientAnimation";
